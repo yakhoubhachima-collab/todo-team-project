@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Parfaitement placé ! -->
     <title>Mon Application To-Do List</title>
 </head>
 <body>
@@ -11,11 +12,14 @@
         
         <div class="todo-form">
             <input type="text" id="task-input" placeholder="Ajouter une nouvelle tâche...">
-            <button id="add-btn">Ajouter</button>
+            <button id="add-btn">Ajouter</button>[cite: 2]
         </div>
 
         <ul id="task-list">
-            </ul>
+        </ul>
     </div>
+
+    <!-- C'est ici qu'il faut le mettre, juste avant de fermer le body -->
+    <script src="script.js"></script>
 </body>
 </html>
