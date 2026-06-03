@@ -1,0 +1,110 @@
+/* Styles généraux pour centrer la To-Do List et embellir la page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style du conteneur principal */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Titre de l'application */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+/* Zone de saisie et bouton alignés */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style du champ de texte (#task-input) */
+#task-input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#task-input:focus {
+    border-color: #007bff;
+}
+
+/* Style du bouton d'ajout (#add-btn) */
+#add-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+#add-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style de la liste des tâches (#task-list) */
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style de chaque élément de tâche (li) */
+#task-list li {
+    background-color: #f8f9fa;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #007bff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Classe pour les tâches cochées/terminées */
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+    border-left-color: #28a745 !important;
+}
+
+/* Bouton de suppression à l'intérieur d'une tâche */
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: #bd2130;
+}
